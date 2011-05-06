@@ -447,6 +447,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\..\src\patch.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\src\xsub.cpp"
 				>
 			</File>
@@ -746,6 +750,10 @@
 			</File>
 			<File
 				RelativePath="..\..\..\src\xreq.hpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\src\patch.hpp"
 				>
 			</File>
 			<File
