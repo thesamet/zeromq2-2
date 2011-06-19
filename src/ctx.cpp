@@ -18,24 +18,22 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#include "platform.hpp"
+#if defined ZMQ_HAVE_WINDOWS
+#include "windows.hpp"
+#endif
+
 #include <new>
 #include <string.h>
 
 #include "ctx.hpp"
 #include "socket_base.hpp"
 #include "io_thread.hpp"
-#include "platform.hpp"
 #include "reaper.hpp"
 #include "err.hpp"
 #include "pipe.hpp"
 
-#if defined ZMQ_HAVE_WINDOWS
-#ifndef WIN32_LEAN_AND_MEAN
-#define WIN32_LEAN_AND_MEAN
-#endif
-#include <winsock2.h>
-#include <windows.h>
-#else
+#if !defined ZMQ_HAVE_WINDOWS
 #include <unistd.h>
 #endif
 
