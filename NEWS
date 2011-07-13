@@ -1,9 +1,8 @@
-0MQ version 2.2.0 (beta), released on 2011/04/xx
+0MQ version 2.2.0 (beta), released on 2011/09/xx
 ================================================
 
 Bug fixes
 ---------
-
 
 Changes
 -------
@@ -20,3 +19,4 @@ Changes
   against peers sending oversized messages. If a peer sends an oversized
   message, the connection to that peer is dropped.
 
+Also includes all bug fixes and changes in 2.1.x.
