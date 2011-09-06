@@ -4,6 +4,8 @@
 Bug fixes
 ---------
 
+* Includes all bug fixes and changes in 2.1.x.
+
 Changes
 -------
 
@@ -19,4 +21,9 @@ Changes
   against peers sending oversized messages. If a peer sends an oversized
   message, the connection to that peer is dropped.
 
-Also includes all bug fixes and changes in 2.1.x.
+Building
+--------
+
+* Added configure --with-poller option to select polling mechanism. Will
+  autoselect from kqueue, epoll, devpoll, poll, and select (Mikko Koppanen).
+
